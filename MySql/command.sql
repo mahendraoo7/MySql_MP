@@ -39,12 +39,12 @@
 --  skip some column data
 
  insert into user (id,firstname,lastname,gender,mobileNo) value 
- (10,'Krish',"Rangani","male",123456789),
- (9, 'Mahendra',"Purohit","Male",123456789);
+ (9,'Krish',"Rangani","male",123456789),
+ (10, 'Mahendra',"Purohit","Male",123456789);
 
 
  insert into user value 
- (9,'Vrishabh',"jogani","Male",1234556789);
+ (11,'Vrishabh',"jogani","Male",1234556789);  
 
  --select * from user
 
@@ -61,7 +61,7 @@
 );
 
 
- insert into CLIENT_MASTER (CLIENTNO,NAME,CITY,PINCODE,STATE,BALDUE) value
+         insert into CLIENT_MASTER (CLIENTNO,NAME,CITY,PINCODE,STATE,BALDUE) value
  ('C00001','Ivan Bayross',"mumbai",400054,"Maharastra",15000),
  ('C00002','Mamta Muzumdar',"Madras",780001,"Tamilnadu",0),
  ('C00003','Chhaya benkar ',"Mumbai",400057,"Maharastra",5000),
@@ -129,7 +129,7 @@ select name as "Full Name ", city "District" from client_master;
 -- where clause 
 
 
-select * from client_master where city = "mummbai";
+select * from client_master where city = "mumbai";
 select * from client_master where baldue < 5000;
 select * from client_master where baldue >=5000;
 select * from client_master where baldue = 5000;
@@ -153,9 +153,9 @@ delete cliemt_master where address1 = "66";
 
 -- drop statment
 
-drop table client_master ;
+drop table client_master ;    
 drop table node_8am;
 
 
-
+  
 
