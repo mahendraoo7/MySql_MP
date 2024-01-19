@@ -36,7 +36,9 @@ select * from customers where customerName like 'mini%co.';
 
 select * from customers ;
 
-select * from customers where phone like '11%';
+select * from customers where phone like '11%';	
+
+
 
 
 
